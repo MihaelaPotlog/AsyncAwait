@@ -1,0 +1,65 @@
+/*
+@theme exn-theme
+*/
+
+@import "default";
+
+section {
+    display: flex;
+    justify-content: start;
+    padding: 78.5px;
+    padding-top: 100px;
+}
+
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+h4 {
+    font-size: 0.75rem;
+}
+
+h1,
+h2 {
+    color: #7ebc01;
+}
+
+ul li {
+    list-style: none;
+    position: relative;
+}
+
+ul li::before {
+    content: "\2022";
+    color: #7ebc01;
+    font-size: 66px;
+    position: absolute;
+    left: -0.6em;
+    top: -30px;
+}
+ul ul li::before {
+    content: "◦";
+}
+
+footer {
+    position: absolute;
+    z-index: 0 !important;
+    display: flex;
+    justify-content: right;
+    width:95%;
+}
+
+header {
+    position: absolute;
+    left: 78.5px;
+    z-index: 0 !important;
+}
